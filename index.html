@@ -5,111 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, course, resume, css, tags">
     <meta name="description" content="Резюме в базовом курсе по html">
+    <link rel="stylesheet" href="styles.css">
     <title>Resume</title>
 </head>
 <body>
    
-    <img src="banan.jpg" width="230" alt="фото профиля">
-    <h1><strong> Zhdanan </strong></h1>
+    <div class="container">
 
-    <hr>
+        <div class="info">
+     
+            <img src="banan.jpg" alt="фото профиля" class="avatar">
 
-    <p>Я люблю авиацию. <em>Мечтал стать пилотом гражданской авиации.</em> К сожалению, не получилось из-за зрения.</p>
+            <div class="info-text">
 
-    <p>Получил высшее образование. Отработал год инженером и понял, что это не моё. Вернулся домой и устроился в техническую поддержку умных устройств с Алисой. Отчаявшись принял <strong> решение стать фронтенд разработчиком.</strong></p>
+                <h1><strong> Zhdanan </strong></h1>
 
-    <h4><strong>Список социальных сетей:</strong></h4>
-    <a href="https://www.instagram.com/" target="_blank">Instagram*</a> 
-    | 
-    <a href="https://ru.wikipedia.org/wiki/Telegram" target="_blank">Telegram</a> 
-    |
-    <a href="https://www.youtube.com/" target="_blank">YouTube*</a>
+                <hr>
 
-    <br>
-    <br>
+                <p>Я люблю авиацию. Мечтал стать пилотом гражданской авиации. К сожалению, не получилось из-за зрения.</p>
 
-    <h2>Мои хобби:</h2>
+                <p>Получил высшее образование. Отработал год инженером и понял, что это не моё. Вернулся домой и устроился в техническую поддержку умных устройств с Алисой. Отчаявшись принял решение стать фронтенд разработчиком.</p>
 
-   <ol>
-    <li>Динамичное управление автомобилем.</li>
-    <li>Уход за автомобилем.</li>
-    <li>Хорошо поспать.</li>
-    <li>Мыслить.</li>
-   </ol>
+                <h4><strong>Список социальных сетей:</strong></h4>
+                <a href="https://www.instagram.com/" target="_blank">Instagram*</a> 
+                | 
+                <a href="https://ru.wikipedia.org/wiki/Telegram" target="_blank">Telegram</a> 
+                |
+                <a href="https://www.youtube.com/" target="_blank">YouTube*</a>
 
-    <br>
+                <br>
+                <br>
 
-    <h2>Опыт работы:</h2>
+                <div class="line">
 
-    <table border="3">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
+                    <hr>
+                    <p>* организации, деятельность которых запрещена на территории Российской Федерации.</p>
+        
+                </div>
 
-        <tbody>
-            <tr>
-                <td>Уральские Авиалинии</td>
-                <td>Практикант</td>
-                <td>2018-2018</td>
-            </tr>
+            </div>
 
-            <tr>
-                <td>Нефть</td>
-                <td>Практикант</td>
-                <td>2021-2021</td>  
-            </tr>
-
-            <tr>
-                <td>Газ</td>
-                <td>Инженер</td>
-                <td>2022-2023</td>  
-            </tr>
-
-            <tr>
-                <td>Индекс</td>
-                <td>Специалист ТП</td>
-                <td>2023-2024</td>  
-            </tr>
-        </tbody>
-    </table>
-
-    <br>
-
-    <h2>Связаться со мной:</h2>
-
-    <form action="/">
-
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
         </div>
 
-        <div>
-            <label for="email">Ваше email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+
+        <ol class="list">
+            <li>Динамичное управление автомобилем.</li>
+            <li>Уход за автомобилем.</li>
+            <li>Хорошо поспать.</li>
+            <li>Мыслить.</li>
+        </ol>
+    </div>
+
+        <br>
+
+    <div class="card bg-red">
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+
+                <tbody>
+                    <tr>
+                        <td>Уральские Авиалинии</td>
+                        <td>Практикант</td>
+                        <td>2018-2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>Нефть</td>
+                        <td>Практикант</td>
+                        <td>2021-2021</td>  
+                    </tr>
+
+                    <tr>
+                        <td>Газ</td>
+                        <td>Инженер</td>
+                        <td>2022-2023</td>  
+                    </tr>
+
+                    <tr>
+                        <td>Индекс</td>
+                        <td>Специалист ТП</td>
+                        <td>2023-2024</td>  
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="4" placeholder="Введите сообщение..."></textarea>
+        <br>
+
+        <div class="card bg-green">
+            <h2>Мои курсы</h2>
+
+            <ul class="link-list">
+                <li>
+                    <a href="https://lk.result-university.com/teach/control/stream" target="_blank">Профессия Джуниор Frontend-разработчик</a>
+                </li>
+                <li>
+                    <a href="https://lk.result-university.com/teach/control/stream" target="_blank">Все курсы</a>
+                </li>
+            </ul>
+
         </div>
 
-        <input type="button" value="Отправить!">
+        <br>
 
-    </form>
+        <div class="svyaz">
 
-    <br>
-    <br>
-    <br>
+            <form action="/" class="form">
 
-    <hr color="blue">
-    <p>* организации, деятельность которых запрещена на территории Российской Федерации.</p>
-    <hr color="blue">
+                <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваше email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="20" rows="4" placeholder="Введите сообщение..."></textarea>
+                </div>
+
+                <input type="button" value="Отправить!" class="btn">
+
+            </form>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
 
 </body>
 </html>
